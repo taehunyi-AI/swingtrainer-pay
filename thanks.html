@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You — SwingTrainer</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #0a0e17; --surface: #111827; --border: #1e293b; --text: #e2e8f0; --text-muted: #94a3b8; --accent: #22c55e; --green: #22c55e; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg); color: var(--text);
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+        }
+        .container { max-width: 480px; width: 100%; padding: 2rem; text-align: center; }
+        .check {
+            width: 72px; height: 72px; border-radius: 50%;
+            background: rgba(34,197,94,0.15); margin: 0 auto 1.5rem;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem;
+        }
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem; font-weight: 400; margin-bottom: 1rem;
+        }
+        p { color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .card {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 16px; padding: 1.5rem; text-align: left; margin-bottom: 1.5rem;
+        }
+        .card-title {
+            font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.8rem;
+        }
+        .card p { font-size: 0.88rem; margin-bottom: 0.5rem; }
+        .card p:last-child { margin-bottom: 0; }
+        .footer { font-size: 0.78rem; color: var(--text-muted); }
+        .footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="check">&#10003;</div>
+    <h1>Payment Received!</h1>
+    <p>Thank you for purchasing SwingTrainer Premium. Your license key (<code style="font-size:0.85rem; color: var(--accent);">SGT-XXXXX-YYYYY</code>) will be sent to your email address within 24 hours.</p>
+    <div class="card">
+        <div class="card-title">What's Next</div>
+        <p>1. Check your email for the license key</p>
+        <p>2. Open Garmin Connect &#8594; SwingTrainer &#8594; Settings</p>
+        <p>3. Enter the key under <strong style="color:#e2e8f0;">&#9733; License Key (Premium)</strong></p>
+        <p>4. Sync your watch &#8212; all features unlocked!</p>
+    </div>
+    <div class="card">
+        <div class="card-title">&#55356;&#57155; 한국어 안내</div>
+        <p>라이선스 키는 24시간 내 이메일로 발송됩니다.</p>
+        <p>Garmin Connect 앱 &#8594; SwingTrainer &#8594; 설정 &#8594; 라이선스 키 입력 후 워치 동기화.</p>
+    </div>
+    <div class="footer">
+        Need help? <a href="mailto:taehun.yi@gmail.com">taehun.yi@gmail.com</a>
+    </div>
+</div>
+</body>
+</html>
