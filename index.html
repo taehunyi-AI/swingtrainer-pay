@@ -17,6 +17,7 @@
             --success: #10b981;
             --paypal-blue: #0070ba;
             --lemon: #ffc233;
+            --danger: #ef4444;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -71,6 +72,7 @@
         .tip-title { font-weight: 700; color: var(--accent); margin-bottom: 4px; font-size: 13px; }
         .tip-box ul { padding-left: 16px; }
         .tip-box li { margin-bottom: 3px; }
+        .tip-warning { color: var(--danger); font-weight: 600; font-size: 12px; margin-top: 6px; }
         .recommended { display: inline-block; background: var(--success); color: white; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
         .payment-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
         .btn {
@@ -144,10 +146,21 @@
         <div class="tip-box lang-ko">
             <div class="tip-title">&#127472;&#127479; 한국 사용자 결제 안내</div>
             <ul>
-                <li><strong>신용카드/체크카드</strong> &#8594; Gumroad 카드 결제 이용 <span class="recommended">추천</span></li>
-                <li><strong>PayPal 계정</strong> &#8594; PayPal 버튼으로 로그인 결제</li>
-                <li>PayPal 카드 직접 입력은 한국 카드가 제한될 수 있습니다</li>
+                <li><strong>반드시 "직불카드 또는 신용카드로 결제"를 선택하세요</strong> <span class="recommended">필수</span></li>
+                <li>카드번호, 만료일, CVV를 직접 입력하면 결제됩니다</li>
+                <li>Visa, Mastercard, AMEX, JCB 모두 가능</li>
             </ul>
+            <p class="tip-warning">&#9888; "PayPal로 결제"를 선택하면 한국 카드가 차단됩니다!</p>
+        </div>
+
+        <!-- English notice -->
+        <div class="tip-box lang-en" style="background: rgba(255,255,255,0.03); border-color: var(--card-border);">
+            <div class="tip-title" style="color: var(--text-dim);">&#127758; Payment Info</div>
+            <ul style="color: var(--text-dim);">
+                <li><strong style="color: var(--text);">International users:</strong> Both Card and PayPal are available</li>
+                <li><strong style="color: var(--text);">South Korea users:</strong> Select "Pay with card" only</li>
+            </ul>
+            <p class="tip-warning">&#9888; Korean-issued cards will be blocked if you select PayPal</p>
         </div>
 
         <!-- Lemon Squeezy -->
@@ -169,7 +182,7 @@
         <!-- PayPal -->
         <div>
             <div class="payment-label lang-en">PayPal Account</div>
-            <div class="payment-label lang-ko">PayPal 계정</div>
+            <div class="payment-label lang-ko">PayPal 계정 (해외 사용자용)</div>
             <a href="https://www.paypal.com/ncp/payment/NYDAWL438LTCA" class="btn btn-paypal">
                 <span>&#9419;</span>
                 <span class="lang-en-inline">Pay with PayPal &#8212; $7.99</span>
@@ -195,7 +208,7 @@
     </div>
 
     <div class="footer">
-        <p>Developed by Taehoon &#183; taehun.yi@gmail.com</p>
+        <p>Developed by Taehoon</p>
         <p style="margin-top: 4px;"><a href="https://apps.garmin.com/en-US/apps/">Download on Connect IQ Store</a></p>
     </div>
 </div>
